@@ -1,7 +1,7 @@
 <template>
-  <di class="flex gap-[40px]">
-    <div class="">
-      <img :src="`/_nuxt/assets/images/${icon}`" alt="" />
+  <div class="flex gap-[20px] md:gap-[40px]">
+    <div class="flex-shrink-0">
+      <img :src="`/images/${icon}`" alt="" />
     </div>
 
     <div class="max-w-[450px]">
@@ -12,7 +12,7 @@
         {{ text }}
       </p>
     </div>
-  </di>
+  </div>
 </template>
 <script setup>
 const props = defineProps(["id", "icon", "title", "text"]);

@@ -7,4 +7,34 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  modules: ["@pinia/nuxt"],
+  components: [
+    {
+      path: "~/components/",
+    },
+    {
+      path: "~/components/Header",
+    },
+    {
+      path: "~/components/Intro",
+    },
+    {
+      path: "~/components/Advantage",
+    },
+    {
+      path: "~/components/Course",
+    },
+    {
+      path: "~/components/JobOffer",
+    },
+    {
+      path: "~/components/Feedback",
+    },
+    {
+      path: "~/components/Contact",
+    },
+    {
+      path: "~/components/Footer",
+    },
+  ],
 });

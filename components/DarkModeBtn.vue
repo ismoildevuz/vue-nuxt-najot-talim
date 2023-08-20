@@ -17,6 +17,8 @@
   </button>
 </template>
 <script setup>
+import { ref } from "vue";
+
 const toggle = ref(false);
 const toggleBtn = () => {
   console.log(document.querySelector(".dark-mode").classList.toggle("active"));

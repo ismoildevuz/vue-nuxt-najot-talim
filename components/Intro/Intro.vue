@@ -1,19 +1,24 @@
 <template>
   <section class="intro bg-[#F1F0EE]">
-    <Container class="px-[32px] pt-[116px]">
+    <Container class="pt-[80px] md:pt-[116px]">
       <div class="max-w-[325px] mb-[70px]">
         <div class="mb-[20px]">
-          <p class="font-bold text-[40px] leading-[56px] text-black">
+          <p
+            class="font-bold text-[32px] leading-[48px] md:text-[40px] md:leading-[56px] text-black"
+          >
             Kasblarni
           </p>
-          <p class="font-bold text-[40px] leading-[56px] text-black">
-            <span class="text-[#BA8D5B]">“Najot Ta’lim”</span
-            ><span class="">da</span>
+          <p
+            class="font-bold text-[32px] leading-[48px] md:text-[40px] md:leading-[56px] text-black"
+          >
+            <span class="text-[#BA8D5B]">“Najot Ta’lim”</span><span>da</span>
             <!-- <span class="text-[#BA8D5B]">mutaxassislardan</span> -->
             <!-- <span class="text-[#BA8D5B]">onlayn</span> -->
             <!-- <span class="text-[#BA8D5B]">istalgan nuqtadan</span> -->
           </p>
-          <p class="font-bold text-[40px] leading-[56px] text-black">
+          <p
+            class="font-bold text-[32px] leading-[48px] md:text-[40px] md:leading-[56px] text-black"
+          >
             o‘rganing
           </p>
         </div>
@@ -34,13 +39,39 @@
   </section>
 </template>
 <script setup></script>
-<style lang="scss">
+<style lang="scss" scoped>
 .intro {
-  background-image: url("../../assets/images/bg-hero.png"),
-    url("../../assets/images/bg-hero.svg");
+  background-image: url("/images/bg-hero.png"), url("/images/bg-hero.svg");
   background-repeat: no-repeat;
   background-position: bottom 0 right 27%, calc(50% + 270px) calc(50% + 47px);
   background-size: 650px 450px, contain;
   padding-bottom: 60px;
+}
+
+@media (max-width: 1150px) {
+  .intro {
+    background-position: bottom 0 right 12%, calc(50% + 270px) calc(50% + 47px);
+    background-size: 500px 340px, 760px 450px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    background-position: bottom 0 right 12%, calc(50% + 270px) calc(50% + 47px);
+    background-size: 400px 270px, 660px 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    background-position: bottom 0 right 12%, calc(50% + 220px) calc(50% + 110px);
+    background-size: 300px 200px, 560px;
+  }
+}
+
+@media (max-width: 640px) {
+  .intro {
+    background-image: none;
+  }
 }
 </style>
